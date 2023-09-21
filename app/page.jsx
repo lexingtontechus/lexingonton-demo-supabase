@@ -11,7 +11,9 @@ export default function Home() {
           simple, secure.
         </p>
       </div>
-      <div className="col-6 auth-widget"></div>
+      <div className="col-6 auth-widget">
+        <AuthForm />
+      </div>
     </div>
   );
 }
