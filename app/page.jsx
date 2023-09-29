@@ -1,19 +1,20 @@
-import AuthForm from "./auth-form";
+"use client";
 
+//import Test from "./components/test";
+
+//import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 export default function Home() {
   return (
-    <div className="row">
-      <div className="col-6">
-        <h1 className="header">Supabase Auth + Storage</h1>
-        <p className="">
-          Experience our Auth and Storage through a simple profile management
-          example. Create a user profile and upload an avatar image. Fast,
-          simple, secure.
-        </p>
+    <section className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
+        <div className="row">
+          <div className="col-6">
+            <h1 className="text-5xl text-primary py-2">LXT FX DEMO</h1>
+            <p className="text-secondary py-2">User Trading Dashboard</p>
+          </div>
+          <div className="p-8"></div>
+        </div>
       </div>
-      <div className="col-6 auth-widget">
-        <AuthForm />
-      </div>
-    </div>
+    </section>
   );
 }
