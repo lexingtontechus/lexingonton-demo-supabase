@@ -2,14 +2,11 @@
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen">
-      <div className="px-8 py-4 breadcrumbs">
-        <h1 className="text-2xl font-semibold text-primary">Dashboard</h1>
-      </div>
+    <main className="min-h-screen p-4">
       {/*     Summary Widgets     */}
-      <div className="px-8 py-4">
+      <div className="grid grid-flow-row auto-rows-max justify-center gap-2 ">
         <h1 className="text-secondary text-xl">Account Summary</h1>
-        <div className="stats shadow text-secondary bg-base-300">
+        <div className="stats stats-vertical lg:stats-horizontal shadow text-secondary bg-base-300">
           <div className="stat">
             <div className="stat-figure text-secondary">
               <svg
@@ -94,12 +91,11 @@ export default function DashboardPage() {
             <div className="stat-desc">Jan 1st - Feb 1st</div>
           </div>
         </div>
-      </div>
 
-      {/* Account Details */}
-      <div className="px-8 py-4">
+        {/* Account Details */}
+
         <h1 className="text-secondary text-xl">MT4 Account Details</h1>
-        <div className="stats shadow bg-base-300">
+        <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-300">
           <div className="stat">
             <div className="stat-figure text-secondary">
               <svg
@@ -157,11 +153,11 @@ export default function DashboardPage() {
             <div className="stat-desc"></div>
           </div>
         </div>
-      </div>
-      {/* MT4 Details */}
-      <div className="px-8 py-4">
+
+        {/* MT4 Details */}
+
         <h1 className="text-secondary text-xl">MT4 Server Details</h1>
-        <div className="stats shadow bg-base-300">
+        <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-300">
           <div className="stat">
             <div className="stat-figure text-secondary">
               <svg

@@ -54,15 +54,10 @@ const tradingobjectives = [
 ];
 export default function TradingOverview() {
   return (
-    <main className="min-h-screen">
-      <div className="px-8 py-4 breadcrumbs">
-        <h1 className="text-2xl font-semibold text-primary">
-          Trading Overview
-        </h1>
-      </div>
+    <main className="min-h-screen p-4">
       <div className="grid grid-flow-row auto-rows-max justify-center gap-2">
         <div className="px-8 py-4">
-          <div className="stats stats-vertical bg-base-200">
+          <div className="stats stats-vertical lg:stats-horizontal bg-base-200">
             <div className="stat place-items-center">
               <div className="stat-title">Account balance</div>
               <div className="stat-value">$89,400</div>
@@ -86,7 +81,7 @@ export default function TradingOverview() {
           <h2 className="text-secondary font-semibold text-xl py-2">
             Trading Summary
           </h2>
-          <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-200">
+          <div className="stats stats-vertical lg:stats-horizontal lg:stats-horizontal shadow bg-base-200">
             {tradingsummary.map((item) => (
               <div className="stat" id={item.title}>
                 <div className="stat-title">{item.title}</div>
@@ -101,7 +96,7 @@ export default function TradingOverview() {
           <h2 className="text-secondary font-semibold text-xl py-2">
             Trading Details
           </h2>
-          <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-200">
+          <div className="stats stats-vertical lg:stats-horizontal lg:stats-horizontal shadow bg-base-200">
             {tradingdetails.map((item) => (
               <div className="stat" id={item.title}>
                 <div className="stat-title">{item.title}</div>
@@ -116,7 +111,7 @@ export default function TradingOverview() {
           <h2 className="text-secondary font-semibold text-xl py-2">
             Trading Objectives
           </h2>
-          <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-200">
+          <div className="stats stats-vertical lg:stats-horizontal lg:stats-horizontal shadow bg-base-200">
             {tradingobjectives.map((item) => (
               <div className="stat" id={item.title}>
                 <div className="stat-title">{item.title}</div>
